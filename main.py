@@ -1,6 +1,8 @@
 import json
 import random
 
+from tabulate import tabulate
+
 chore_list = {}
 board = []
 
@@ -23,24 +25,20 @@ def setup_board(helpers):
 
 
 def output_board():
-    for row in board:
-        print(row['name'])
-        for item in row['chores']:
-            print(item['name'], end=' | ')
-        print()
+    print(tabulate(board))
 
 
 if __name__ == "__main__":
     staff = ["Jodie", "Pete", "Maya", "Lucy"]
-    print("Staff", staff)
+    # print("Staff", staff)
     chore_list = load_chores()
     # print("Chores", chore_list)
     setup_board(staff)
-    print(board)
+    # print(board)
 
     while len(chore_list) > 0:
         for row in board:
             row['chores'].append(select_random_chore())
-            print("row", row)
+            # print("row", row)
 
     output_board()
