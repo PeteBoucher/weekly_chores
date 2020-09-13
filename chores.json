@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Tidy Lounge",
+    "room": "lounge",
+    "prerequisite": null
+  },
+  {
+    "id": 2,
+    "name": "Sweep Lounge",
+    "room": "lounge",
+    "prerequisite": 1
+  },
+  {
+    "id": 3,
+    "name": "Dust Lounge",
+    "room": "lounge",
+    "prerequisite": 2
+  },
+  {
+    "id": 4,
+    "name": "Mop Lounge",
+    "room": "lounge",
+    "prerequisite": 2
+  },
+  {
+    "id": 5,
+    "name": "Tidy Dining room",
+    "room": "dining",
+    "prerequisite": null
+  },
+    {
+    "id": 6,
+    "name": "Sweep Dining room",
+    "room": "dining",
+    "prerequisite": 5
+  },
+  {
+    "id": 7,
+    "name": "Dust Dining room",
+    "room": "dining",
+    "prerequisite": 6
+  },
+  {
+    "id": 8,
+    "name": "Mop Dining room",
+    "room": "dining",
+    "prerequisite": 6
+  }
+]
